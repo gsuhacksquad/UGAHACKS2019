@@ -14,6 +14,15 @@ const paypal = require('paypal-rest-sdk');
 const lob = require('lob')(process.env.LOB_KEY);
 const ig = require('instagram-node').instagram();
 const axios = require('axios');
+/*To access Google APIs using the official client SDKs, you create a service object 
+based on the API's discovery document, which describes the API to the SDK. You'll need 
+to fetch it from the Vision API's discovery service, using your credentials: */
+//const vision = require('@google-cloud/vision');
+
+// Creates a client
+//const client = new vision.ImageAnnotatorClient();
+
+const fs = require('fs');
 
 /**
  * GET /api
